@@ -7,16 +7,22 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "i18n:extract": "formatjs extract 'src/**/*.{ts,tsx}' --ignore='**/*.d.ts' --id-interpolation-pattern [sha512:contenthash:base64:6] --out-file lang/en.json",
+    "i18n:compile": "formatjs compile-folder --ast lang/ lang/compiled/",
+    "i18n:download": "texterify download"
   },
   "dependencies": {
+    "@babel/runtime": "^7.25.7",
     "@radix-ui/react-avatar": "^1.1.1",
     "@radix-ui/react-dropdown-menu": "^2.1.2",
     "@radix-ui/react-slot": "^1.1.0",
+    "babel-plugin-formatjs": "^10.5.18",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.452.0",
     "next": "14.2.15",
+    "next-intl": "^3.21.1",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
@@ -26,6 +32,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.12.0",
+    "@formatjs/cli": "^6.2.15",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -37,6 +44,7 @@
     "globals": "^15.11.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
+    "texterify": "^0.1.1",
     "typescript": "^5",
     "typescript-eslint": "^8.8.1"
   }

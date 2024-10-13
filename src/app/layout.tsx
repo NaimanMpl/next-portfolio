@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import ThemeProvider from '@/theme/ThemeProvider';
-import { Inter } from 'next/font/google';
 import IntlProvider from '@/i18n/IntlProvider';
-
-const inter = Inter({ subsets: ['latin'] });
+import { getLocale } from 'next-intl/server';
 
 export const metadata: Metadata = {
   title: 'Naïman',
@@ -16,10 +14,12 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+
   return (
     <html>
-      <body className={inter.className}>
-        <IntlProvider>
+      <body>
+        <IntlProvider locale={locale}>
           <ThemeProvider attribute="class" defaultTheme="dark">
             {children}
           </ThemeProvider>

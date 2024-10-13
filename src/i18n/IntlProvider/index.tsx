@@ -1,56 +1,25 @@
 'use client';
-import {
-  createContext,
-  Dispatch,
-  PropsWithChildren,
-  SetStateAction,
-  useContext,
-  useEffect,
-  useState,
-} from 'react';
+import { PropsWithChildren } from 'react';
 import { IntlProvider as ReactIntlProvider } from 'react-intl';
+import messagesFr from '@lang/compiled/fr.json';
+import messagesEn from '@lang/compiled/en.json';
+import { IntlConfig } from 'next-intl';
 
-const AVAILABLE_LOCALES = ['fr', 'en', 'FR', 'EN'];
+type Locale = 'fr' | 'en';
 
-interface Props {
-  locale: string;
-  setLocale: Dispatch<SetStateAction<string>>;
-}
-
-const I18nContext = createContext<Props>({
-  locale: 'en',
-  setLocale: () => {},
-});
-
-export const useLocale = () => {
-  const context = useContext(I18nContext);
-  if (!context) {
-    throw new Error('useLocale must be used within IntlProvider');
-  }
-  return context;
+const MESSAGES_MAP = {
+  fr: messagesFr,
+  en: messagesEn,
 };
 
-const IntlProvider = ({ children }: PropsWithChildren) => {
-  const [locale, setLocale] = useState<string>('en');
-
-  useEffect(() => {
-    const locale = localStorage.getItem('locale');
-    if (!locale) {
-      return;
-    }
-    if (AVAILABLE_LOCALES.includes(locale)) {
-      setLocale(locale);
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem('locale', locale);
-  }, [locale]);
-
+const IntlProvider = ({ children, locale }: PropsWithChildren<IntlConfig>) => {
   return (
-    <I18nContext.Provider value={{ locale, setLocale }}>
-      <ReactIntlProvider locale={locale}>{children}</ReactIntlProvider>
-    </I18nContext.Provider>
+    <ReactIntlProvider
+      locale={locale}
+      messages={MESSAGES_MAP[locale as Locale]}
+    >
+      {children}
+    </ReactIntlProvider>
   );
 };
 
