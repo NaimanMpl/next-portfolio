@@ -1,6 +1,12 @@
+'use client';
 import Container from '@/components/common/Container';
 import Header from '@/components/common/Header';
+import ContributionCard from '@/home/ContributionCard';
 import ExperiencesCard from '@/home/ExperiencesCard';
+import FavoriteProjectCard from '@/home/FavoriteProjectCard';
+import GitHubCard from '@/home/GitHubCard';
+import LangagesCard from '@/home/LangagesCard';
+import LeagueCard from '@/home/LeagueCard';
 import LocaleHourCard from '@/home/LocaleHourCard';
 import PersonalCard from '@/home/PersonalCard';
 
@@ -9,10 +15,30 @@ export default function Home() {
     <div>
       <Header />
       <Container>
-        <div className="mt-12 grid grid-cols-3 gap-8">
+        <div className="mt-12 grid grid-cols-[1fr_380px_1fr] gap-x-10 gap-y-6 grid-rows-[1fr 200px 1fr 1fr]">
           <PersonalCard />
           <LocaleHourCard />
           <ExperiencesCard />
+          <div className="flex flex-col gap-6">
+            <LangagesCard />
+            <GitHubCard />
+          </div>
+          <div
+            className="bg-red-500 rounded-lg"
+            style={{
+              gridColumn: '2 / 3',
+              gridRow: '2 / 4',
+            }}
+          >
+            <img
+              className="rounded-lg h-full object-cover"
+              src="/hero.jpg"
+              alt="Hero"
+            />
+          </div>
+          <FavoriteProjectCard />
+          <ContributionCard />
+          <LeagueCard />
         </div>
       </Container>
     </div>
