@@ -9,7 +9,7 @@ import { FormattedMessage } from 'react-intl';
 const Header = () => {
   const { theme, setTheme } = useTheme();
   return (
-    <header className="flex justify-between px-24 py-6 border-b">
+    <header className="flex justify-between px-24 py-5 border-b">
       <div className="flex items-center gap-2">
         <Avatar>
           <AvatarImage src="/avatar.png" alt="Naïman" />

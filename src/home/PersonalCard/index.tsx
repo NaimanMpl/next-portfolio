@@ -15,7 +15,7 @@ const PersonalCard = () => {
           <FormattedMessage defaultMessage="Fullstack developer" />
         </span>
         <CardTitle className="text-xl">Naïman</CardTitle>
-        <CardDescription className="text-base">
+        <CardDescription>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, officia.
         </CardDescription>
       </CardHeader>
