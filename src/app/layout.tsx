@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import ThemeProvider from '@/components/ThemeProvider';
+import ThemeProvider from '@/theme/ThemeProvider';
 import { Inter } from 'next/font/google';
+import IntlProvider from '@/i18n/IntlProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -10,17 +11,19 @@ export const metadata: Metadata = {
   description: "Naïman's Porfolio",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark">
-          {children}
-        </ThemeProvider>
+        <IntlProvider>
+          <ThemeProvider attribute="class" defaultTheme="dark">
+            {children}
+          </ThemeProvider>
+        </IntlProvider>
       </body>
     </html>
   );
