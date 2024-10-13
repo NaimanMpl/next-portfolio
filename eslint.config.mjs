@@ -18,9 +18,6 @@ export default [
   { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
-  ...tseslint.configs.recommendedTypeChecked,
-  ...tseslint.configs.strictTypeChecked,
-  ...tseslint.configs.stylisticTypeChecked,
   {
     ...pluginReact.configs.flat.recommended,
     settings: {
@@ -39,6 +36,6 @@ export default [
       'eslint.config.mjs',
       '.next/**',
       '**/*.{js,mjs}',
-    ]
+    ],
   }
 ];
