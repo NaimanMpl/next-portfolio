@@ -24,7 +24,7 @@ const FavoriteProjectCard = () => {
             <FormattedMessage defaultMessage="A piece of my simpler past..." />
           </CardTitle>
         </div>
-        <CardDescription className="text-base">
+        <CardDescription>
           <FormattedMessage defaultMessage="A heartfelt project that recreates the world of my childhood. By creating this Minecraft clone, I wanted to bring one of my favorite games back to life and relive the memories of a simpler time." />
         </CardDescription>
       </CardHeader>

@@ -1,9 +1,9 @@
 import pluginJs from "@eslint/js";
+import parser from '@typescript-eslint/parser';
+import eslintPluginPrettier from "eslint-plugin-prettier/recommended";
 import pluginReact from "eslint-plugin-react";
 import globals from "globals";
 import tseslint from "typescript-eslint";
-import eslintPluginPrettier from "eslint-plugin-prettier/recommended";
-import parser from '@typescript-eslint/parser';
 
 export default [
   { 
@@ -36,6 +36,7 @@ export default [
       'eslint.config.mjs',
       '.next/**',
       '**/*.{js,mjs}',
+      './src/components/ui/**/*.{ts, tsx}'
     ],
   }
 ];

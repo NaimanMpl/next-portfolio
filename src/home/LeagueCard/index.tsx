@@ -9,7 +9,6 @@ import { FormattedMessage } from 'react-intl';
 
 const LeagueCard = () => {
   const { data: summoner, isLoading, isError } = useGetSummonerQuery();
-
   if (isError) {
     return (
       <Card
@@ -64,8 +63,18 @@ const LeagueCard = () => {
                 <span className="text-muted-foreground">#{summoner.tag}</span>
               </span>
             </div>
-            <div>
-              <div className="flex items-center justify-between pb-2">
+          </>
+        )}
+        <div>
+          <div className="flex items-center justify-between pb-2">
+            {isLoading && (
+              <>
+                <Skeleton className="w-24 h-4" />
+                <Skeleton className="w-12 h-4" />
+              </>
+            )}
+            {!isLoading && summoner && (
+              <>
                 <span>
                   {summoner.queues.solo ? (
                     'Ranked'
@@ -78,14 +87,17 @@ const LeagueCard = () => {
                     ? `${summoner.queues.solo.leaguePoints} LP`
                     : '0 LP'}
                 </span>
-              </div>
-              <Progress
-                value={(summoner.queues.solo?.leaguePoints ?? 0) / 100}
-                className="h-1"
-              />
-            </div>
-          </>
-        )}
+              </>
+            )}
+          </div>
+          {isLoading && <Skeleton className="h-2 w-full" />}
+          {!isLoading && summoner && (
+            <Progress
+              value={(summoner.queues.solo?.leaguePoints ?? 0) / 100}
+              className="h-1"
+            />
+          )}
+        </div>
       </CardContent>
     </Card>
   );

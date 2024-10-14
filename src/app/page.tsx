@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <Header />
       <Container>
-        <div className="mt-12 grid grid-cols-[1fr_380px_1fr] gap-x-10 gap-y-6 grid-rows-[1fr 200px 1fr 1fr]">
+        <div className="py-12 grid grid-cols-[1fr_380px_1fr] gap-x-10 gap-y-6 grid-rows-[1fr 200px 1fr 1fr]">
           <PersonalCard />
           <LocaleHourCard />
           <ExperiencesCard />
@@ -36,8 +36,8 @@ export default function Home() {
               alt="Hero"
             />
           </div>
-          <FavoriteProjectCard />
           <ContributionCard />
+          <FavoriteProjectCard />
           <LeagueCard />
         </div>
       </Container>

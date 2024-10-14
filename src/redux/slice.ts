@@ -8,7 +8,10 @@ export const api = createApi({
     getSummoner: builder.query<Summoner, void>({
       query: () => '/summoner',
     }),
+    getContributions: builder.query<{ date: string; commits: number }[], void>({
+      query: () => '/github/contributions',
+    }),
   }),
 });
 
-export const { useGetSummonerQuery } = api;
+export const { useGetSummonerQuery, useGetContributionsQuery } = api;
