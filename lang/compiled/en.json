@@ -1,8 +1,38 @@
 {
+  "+tjnb0": [
+    {
+      "type": 0,
+      "value": "Currently a first-year Master's student, but above all, an average Typescript and Next.js enjoyer"
+    }
+  ],
+  "/wRlFV": [
+    {
+      "type": 0,
+      "value": "My local time"
+    }
+  ],
+  "1OtOj7": [
+    {
+      "type": 0,
+      "value": "Fullstack Developer"
+    }
+  ],
   "49yjSD": [
     {
       "type": 0,
       "value": "Contact Me"
+    }
+  ],
+  "8YQBol": [
+    {
+      "type": 0,
+      "value": "See project"
+    }
+  ],
+  "8wZXrT": [
+    {
+      "type": 0,
+      "value": "Unranked"
     }
   ],
   "GsBRWL": [
@@ -11,10 +41,88 @@
       "value": "Languages"
     }
   ],
+  "KSiUKj": [
+    {
+      "type": 0,
+      "value": "See GitHub"
+    }
+  ],
+  "MTKFPh": [
+    {
+      "type": 0,
+      "value": "Fullstack developer"
+    }
+  ],
+  "Or8X7d": [
+    {
+      "type": 0,
+      "value": "I also play League of Legends, by the way."
+    }
+  ],
+  "SeoZEM": [
+    {
+      "type": 0,
+      "value": "A piece of my simpler past..."
+    }
+  ],
+  "UpwcFd": [
+    {
+      "type": 0,
+      "value": "Unavailable"
+    }
+  ],
+  "Z3lYRx": [
+    {
+      "type": 0,
+      "value": "Also known as..."
+    }
+  ],
+  "doDJyI": [
+    {
+      "type": 0,
+      "value": "Langages & Frameworks"
+    }
+  ],
+  "g8Yp+m": [
+    {
+      "type": 0,
+      "value": "My heartfelt project"
+    }
+  ],
+  "guWpQl": [
+    {
+      "type": 0,
+      "value": "A heartfelt project that recreates the world of my childhood. By creating this Minecraft clone, I wanted to bring one of my favorite games back to life and relive the memories of a simpler time."
+    }
+  ],
+  "oVDe1D": [
+    {
+      "type": 0,
+      "value": "Contributions"
+    }
+  ],
   "texterify_timestamp": [
     {
       "type": 0,
-      "value": "2024-10-13T14:56:38Z"
+      "value": "2024-10-15T22:54:18Z"
+    }
+  ],
+  "tgvES0": [
+    {
+      "type": 0,
+      "value": "Now"
+    }
+  ],
+  "z6QqQm": [
+    {
+      "type": 0,
+      "value": "Experiences"
+    }
+  ],
+  "ziqWm3": [
+    {
+      "type": 0,
+      "value": "League's API is not available."
     }
   ]
 }

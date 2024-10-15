@@ -1,59 +1,86 @@
 {
-  "+tjnb0": {
-    "defaultMessage": "Currently a first-year Master's student, but above all, an average Typescript and Next.js enjoyer"
-  },
-  "/wRlFV": {
-    "defaultMessage": "My local time"
-  },
   "1OtOj7": {
-    "defaultMessage": "Fullstack Developer"
+    "defaultMessage": "Fullstack Developer",
+    "description": ""
   },
   "49yjSD": {
-    "defaultMessage": "Contact Me"
-  },
-  "8YQBol": {
-    "defaultMessage": "See project"
+    "defaultMessage": "Contact Me",
+    "description": ""
   },
   "8wZXrT": {
-    "defaultMessage": "Unranked"
+    "defaultMessage": "Unranked",
+    "description": ""
   },
-  "KSiUKj": {
-    "defaultMessage": "See GitHub"
-  },
-  "MTKFPh": {
-    "defaultMessage": "Fullstack developer"
-  },
-  "Or8X7d": {
-    "defaultMessage": "I also play League of Legends, by the way."
-  },
-  "PtLPn9": {
-    "defaultMessage": "Sorry, service not available"
-  },
-  "SeoZEM": {
-    "defaultMessage": "A piece of my simpler past..."
-  },
-  "UpwcFd": {
-    "defaultMessage": "Unavailable"
-  },
-  "Z3lYRx": {
-    "defaultMessage": "Also known as..."
+  "8YQBol": {
+    "defaultMessage": "See project",
+    "description": ""
   },
   "doDJyI": {
-    "defaultMessage": "Langages & Frameworks"
+    "defaultMessage": "Langages & Frameworks",
+    "description": ""
   },
   "g8Yp+m": {
-    "defaultMessage": "My heartfelt project"
+    "defaultMessage": "My heartfelt project",
+    "description": ""
+  },
+  "GsBRWL": {
+    "defaultMessage": "Languages",
+    "description": ""
   },
   "guWpQl": {
-    "defaultMessage": "A heartfelt project that recreates the world of my childhood. By creating this Minecraft clone, I wanted to bring one of my favorite games back to life and relive the memories of a simpler time."
+    "defaultMessage": "A heartfelt project that recreates the world of my childhood. By creating this Minecraft clone, I wanted to bring one of my favorite games back to life and relive the memories of a simpler time.",
+    "description": ""
+  },
+  "KSiUKj": {
+    "defaultMessage": "See GitHub",
+    "description": ""
+  },
+  "MTKFPh": {
+    "defaultMessage": "Fullstack developer",
+    "description": ""
+  },
+  "Or8X7d": {
+    "defaultMessage": "I also play League of Legends, by the way.",
+    "description": ""
   },
   "oVDe1D": {
-    "defaultMessage": "Contributions"
+    "defaultMessage": "Contributions",
+    "description": ""
+  },
+  "SeoZEM": {
+    "defaultMessage": "A piece of my simpler past...",
+    "description": ""
   },
   "tgvES0": {
-    "defaultMessage": "Now"
+    "defaultMessage": "Now",
+    "description": ""
+  },
+  "+tjnb0": {
+    "defaultMessage": "Currently a first-year Master's student, but above all, an average Typescript and Next.js enjoyer",
+    "description": ""
+  },
+  "UpwcFd": {
+    "defaultMessage": "Unavailable",
+    "description": ""
+  },
+  "/wRlFV": {
+    "defaultMessage": "My local time",
+    "description": ""
+  },
+  "Z3lYRx": {
+    "defaultMessage": "Also known as...",
+    "description": ""
   },
   "z6QqQm": {
-    "defaultMessage": "Experiences"
+    "defaultMessage": "Experiences",
+    "description": ""
+  },
+  "ziqWm3": {
+    "defaultMessage": "League's API is not available.",
+    "description": ""
+  },
+  "texterify_timestamp": {
+    "defaultMessage": "2024-10-15T22:54:18Z",
+    "description": ""
   }
 }

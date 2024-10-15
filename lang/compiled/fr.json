@@ -1,8 +1,38 @@
 {
+  "+tjnb0": [
+    {
+      "type": 0,
+      "value": "Actuellement étudiant en Master 1, mais avant-tout, un enjoyer de Next.js et Typescript"
+    }
+  ],
+  "/wRlFV": [
+    {
+      "type": 0,
+      "value": "Mon heure locale"
+    }
+  ],
+  "1OtOj7": [
+    {
+      "type": 0,
+      "value": "Développeur Fullstack"
+    }
+  ],
   "49yjSD": [
     {
       "type": 0,
       "value": "Me contacter"
+    }
+  ],
+  "8YQBol": [
+    {
+      "type": 0,
+      "value": "Voir le projet"
+    }
+  ],
+  "8wZXrT": [
+    {
+      "type": 0,
+      "value": "Non classé"
     }
   ],
   "GsBRWL": [
@@ -11,10 +41,88 @@
       "value": "Langues"
     }
   ],
+  "KSiUKj": [
+    {
+      "type": 0,
+      "value": "Voir le GitHub"
+    }
+  ],
+  "MTKFPh": [
+    {
+      "type": 0,
+      "value": "Développeur fullstack"
+    }
+  ],
+  "Or8X7d": [
+    {
+      "type": 0,
+      "value": "Sinon, je joue aussi à League of Legends"
+    }
+  ],
+  "SeoZEM": [
+    {
+      "type": 0,
+      "value": "Un morceau de mon passé plus simple..."
+    }
+  ],
+  "UpwcFd": [
+    {
+      "type": 0,
+      "value": "Non disponible"
+    }
+  ],
+  "Z3lYRx": [
+    {
+      "type": 0,
+      "value": "Aussi connu sous le nom de..."
+    }
+  ],
+  "doDJyI": [
+    {
+      "type": 0,
+      "value": "Langages & Frameworks"
+    }
+  ],
+  "g8Yp+m": [
+    {
+      "type": 0,
+      "value": "Mon projet de coeur"
+    }
+  ],
+  "guWpQl": [
+    {
+      "type": 0,
+      "value": "Un projet de cœur qui recrée l'univers de mon enfance. En réalisant ce clone de Minecraft, j'ai voulu redonner vie à l'un de mes jeux préférés et revivre les souvenirs d'une époque plus simple."
+    }
+  ],
+  "oVDe1D": [
+    {
+      "type": 0,
+      "value": "Contributions"
+    }
+  ],
   "texterify_timestamp": [
     {
       "type": 0,
-      "value": "2024-10-13T14:56:38Z"
+      "value": "2024-10-15T22:54:18Z"
+    }
+  ],
+  "tgvES0": [
+    {
+      "type": 0,
+      "value": "Maintenant"
+    }
+  ],
+  "z6QqQm": [
+    {
+      "type": 0,
+      "value": "Expériences"
+    }
+  ],
+  "ziqWm3": [
+    {
+      "type": 0,
+      "value": "L'API de League n'est pas disponible."
     }
   ]
 }
