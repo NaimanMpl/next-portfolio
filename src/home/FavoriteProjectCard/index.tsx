@@ -37,7 +37,7 @@ const FavoriteProjectCard = () => {
         </Link>
       </CardFooter>
       <img
-        className="absolute right-0 -bottom-20 w-64 mobile:w-32 mobile:-bottom-16"
+        className="absolute right-0 -bottom-28 w-64 mobile:w-32 mobile:-bottom-16"
         src="/minecraft_steve.webp"
         alt="Steve"
       />

@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <Header />
       <Container>
-        <div className="py-12 grid grid-cols-[1fr_380px_1fr] gap-x-10 gap-y-6 grid-rows-[1fr 200px 1fr 1fr] mobile:grid-cols-[1fr] mobile:grid-rows-none">
+        <div className="py-12 grid grid-cols-[1fr_380px_1fr] gap-x-10 gap-y-6 mobile:gap-x-0 mobile:grid-cols-1">
           <PersonalCard />
           <LocaleHourCard />
           <ExperiencesCard />
