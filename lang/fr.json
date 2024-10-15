@@ -1,14 +1,86 @@
 {
+  "1OtOj7": {
+    "defaultMessage": "Développeur Fullstack",
+    "description": ""
+  },
   "49yjSD": {
     "defaultMessage": "Me contacter",
+    "description": ""
+  },
+  "8wZXrT": {
+    "defaultMessage": "Non classé",
+    "description": ""
+  },
+  "8YQBol": {
+    "defaultMessage": "Voir le projet",
+    "description": ""
+  },
+  "doDJyI": {
+    "defaultMessage": "Langages & Frameworks",
+    "description": ""
+  },
+  "g8Yp+m": {
+    "defaultMessage": "Mon projet de coeur",
     "description": ""
   },
   "GsBRWL": {
     "defaultMessage": "Langues",
     "description": ""
   },
+  "guWpQl": {
+    "defaultMessage": "Un projet de cœur qui recrée l'univers de mon enfance. En réalisant ce clone de Minecraft, j'ai voulu redonner vie à l'un de mes jeux préférés et revivre les souvenirs d'une époque plus simple.",
+    "description": ""
+  },
+  "KSiUKj": {
+    "defaultMessage": "Voir le GitHub",
+    "description": ""
+  },
+  "MTKFPh": {
+    "defaultMessage": "Développeur fullstack",
+    "description": ""
+  },
+  "Or8X7d": {
+    "defaultMessage": "Sinon, je joue aussi à League of Legends",
+    "description": ""
+  },
+  "oVDe1D": {
+    "defaultMessage": "Contributions",
+    "description": ""
+  },
+  "SeoZEM": {
+    "defaultMessage": "Un morceau de mon passé plus simple...",
+    "description": ""
+  },
+  "tgvES0": {
+    "defaultMessage": "Maintenant",
+    "description": ""
+  },
+  "+tjnb0": {
+    "defaultMessage": "Actuellement étudiant en Master 1, mais avant-tout, un enjoyer de Next.js et Typescript",
+    "description": ""
+  },
+  "UpwcFd": {
+    "defaultMessage": "Non disponible",
+    "description": ""
+  },
+  "/wRlFV": {
+    "defaultMessage": "Mon heure locale",
+    "description": ""
+  },
+  "Z3lYRx": {
+    "defaultMessage": "Aussi connu sous le nom de...",
+    "description": ""
+  },
+  "z6QqQm": {
+    "defaultMessage": "Expériences",
+    "description": ""
+  },
+  "ziqWm3": {
+    "defaultMessage": "L'API de League n'est pas disponible.",
+    "description": ""
+  },
   "texterify_timestamp": {
-    "defaultMessage": "2024-10-13T14:56:38Z",
+    "defaultMessage": "2024-10-15T22:54:18Z",
     "description": ""
   }
 }
