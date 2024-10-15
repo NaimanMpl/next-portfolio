@@ -12,13 +12,7 @@ import { FormattedMessage } from 'react-intl';
 
 const FavoriteProjectCard = () => {
   return (
-    <Card
-      className="relative overflow-hidden flex flex-col justify-between"
-      style={{
-        gridColumn: '3 / 4',
-        gridRow: '2 / 4',
-      }}
-    >
+    <Card className="col-start-3 col-end-4 row-start-2 row-end-4 relative overflow-hidden flex flex-col justify-between mobile:col-start-auto mobile:col-end-auto mobile:row-start-auto mobile:row-end-auto">
       <CardHeader className="flex flex-col gap-3">
         <div>
           <span className="uppercase text-muted-foreground text-xs">
@@ -43,7 +37,7 @@ const FavoriteProjectCard = () => {
         </Link>
       </CardFooter>
       <img
-        className="absolute right-0 -bottom-20 w-64"
+        className="absolute right-0 -bottom-20 w-64 mobile:w-32 mobile:-bottom-16"
         src="/minecraft_steve.webp"
         alt="Steve"
       />

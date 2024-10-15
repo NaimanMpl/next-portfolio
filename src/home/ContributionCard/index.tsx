@@ -26,9 +26,7 @@ const ContributionCard = () => {
 
   return (
     <Card
-      style={{
-        gridRow: '3 / 5',
-      }}
+      className="row-start-3 row-end-5 mobile:row-start-auto mobile:row-end-auto"
       x-chunk="charts-01-chunk-7"
     >
       <CardHeader className="space-y-0 pb-0">

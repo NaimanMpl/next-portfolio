@@ -31,11 +31,7 @@ const LeagueCard = () => {
   }
 
   return (
-    <Card
-      style={{
-        gridColumn: '2 / 4',
-      }}
-    >
+    <Card className="col-start-2 col-end-4 mobile:col-start-auto mobile:col-end-auto">
       <CardHeader className="pb-2">
         {isLoading && <Skeleton className="w-[30rem] h-4" />}
         {!isLoading && summoner && (

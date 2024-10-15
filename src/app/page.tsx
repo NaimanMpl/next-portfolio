@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <Header />
       <Container>
-        <div className="py-12 grid grid-cols-[1fr_380px_1fr] gap-x-10 gap-y-6 grid-rows-[1fr 200px 1fr 1fr]">
+        <div className="py-12 grid grid-cols-[1fr_380px_1fr] gap-x-10 gap-y-6 grid-rows-[1fr 200px 1fr 1fr] mobile:grid-cols-[1fr] mobile:grid-rows-none">
           <PersonalCard />
           <LocaleHourCard />
           <ExperiencesCard />
@@ -23,13 +23,7 @@ export default function Home() {
             <LangagesCard />
             <GitHubCard />
           </div>
-          <div
-            className="bg-red-500 rounded-lg"
-            style={{
-              gridColumn: '2 / 3',
-              gridRow: '2 / 4',
-            }}
-          >
+          <div className="col-start-2 col-end-3 row-start-2 row-end-4 rounded-lg mobile:col-start-auto mobile:col-end-auto mobile:row-start-auto mobile:row-end-auto mobile:hidden">
             <img
               className="rounded-lg h-full object-cover"
               src="/hero.jpg"
