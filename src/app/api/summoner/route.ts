@@ -64,7 +64,8 @@ export async function GET() {
     };
 
     return new Response(JSON.stringify(summoner));
-  } catch {
+  } catch (e) {
+    console.error(e);
     return new Response(
       JSON.stringify({
         message: 'Something went wrong.',

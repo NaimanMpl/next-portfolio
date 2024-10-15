@@ -11,19 +11,17 @@ const LeagueCard = () => {
   const { data: summoner, isLoading, isError } = useGetSummonerQuery();
   if (isError) {
     return (
-      <Card
-        style={{
-          gridColumn: '2 / 4',
-        }}
-      >
+      <Card className="col-start-2 col-end-4 mobile:col-start-auto mobile:col-end-auto">
         <CardHeader>
           <CardTitle className="text-xl">
-            <FormattedMessage defaultMessage="Sorry, service not available" />
+            <FormattedMessage defaultMessage="I also play League of Legends, by the way." />
           </CardTitle>
         </CardHeader>
         <CardContent>
           <div>
-            <span>ZelphiiX#EUW</span>
+            <span>
+              <FormattedMessage defaultMessage="League's API is not available." />
+            </span>
           </div>
         </CardContent>
       </Card>
