@@ -27,7 +27,7 @@ const LocaleHourCard = () => {
   }, []);
 
   return (
-    <Card className="flex justify-center">
+    <Card className="flex justify-center mobile:py-6">
       <CardHeader className="flex items-center justify-center">
         {!date ? (
           <>

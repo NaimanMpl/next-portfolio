@@ -6,29 +6,37 @@ export async function GET() {
   const headers = {
     'X-Riot-Token': process.env.RIOT_API_KEY ?? '',
   };
-
-  const requests = [
-    fetch(
-      `https://europe.api.riotgames.com/riot/account/v1/accounts/by-puuid/${process.env.ACCOUNT_PUUID}`,
-      {
-        headers,
-      },
-    ),
-    fetch(
-      `https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/${process.env.ACCOUNT_PUUID}/`,
-      {
-        headers,
-      },
-    ),
-    fetch(`https://ddragon.leagueoflegends.com/api/versions.json`),
-  ];
-
   try {
+    let res = await fetch(
+      `https://europe.api.riotgames.com/riot/account/v1/accounts/by-riot-id/${process.env.RIOT_GAME_NAME}/${process.env.RIOT_TAG_LINE}/`,
+      {
+        headers,
+      },
+    );
+    const { puuid }: { puuid: string } = await res.json();
+    const requests = [
+      fetch(
+        `https://europe.api.riotgames.com/riot/account/v1/accounts/by-puuid/${puuid}/`,
+        {
+          headers,
+        },
+      ),
+      fetch(
+        `https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/${puuid}/`,
+        {
+          headers,
+        },
+      ),
+      fetch(`https://ddragon.leagueoflegends.com/api/versions.json`),
+    ];
+
     const responses = await Promise.all(requests);
 
     responses.forEach((res) => {
       if (!res.ok) {
-        throw new Error('Service Unavailable');
+        throw new Error(
+          `${res.status} - ${res.statusText} : Service Unavailable`,
+        );
       }
     });
 
@@ -38,7 +46,7 @@ export async function GET() {
     const summonerData = data[1] as SummonerData;
     const [patchVersion] = data[2] as string[];
 
-    const res = await fetch(
+    res = await fetch(
       `https://euw1.api.riotgames.com/lol/league/v4/entries/by-summoner/${summonerData.id}/`,
       {
         headers,
@@ -46,7 +54,9 @@ export async function GET() {
     );
 
     if (!res.ok) {
-      throw new Error('Service Unavailable');
+      throw new Error(
+        `League V4 Service is Unavailable (${res.status} ${res.statusText})`,
+      );
     }
 
     const rankedQueues: Queue[] = await res.json();
@@ -65,7 +75,7 @@ export async function GET() {
 
     return new Response(JSON.stringify(summoner));
   } catch (e) {
-    console.error(e);
+    console.log(e);
     return new Response(
       JSON.stringify({
         message: 'Something went wrong.',
