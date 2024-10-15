@@ -11,12 +11,12 @@ const PersonalCard = () => {
   return (
     <Card>
       <CardHeader>
-        <span className="uppercase text-muted-foreground text-sm">
+        <span className="uppercase text-muted-foreground text-xs">
           <FormattedMessage defaultMessage="Fullstack developer" />
         </span>
         <CardTitle className="text-xl">Naïman</CardTitle>
         <CardDescription>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, officia.
+          <FormattedMessage defaultMessage="Currently a first-year Master's student, but above all, an average Typescript and Next.js enjoyer" />
         </CardDescription>
       </CardHeader>
     </Card>

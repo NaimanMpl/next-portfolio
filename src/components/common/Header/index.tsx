@@ -20,7 +20,7 @@ const Header = () => {
       <nav>
         <ul className="flex gap-4">
           <li>
-            <Link href="/contact">
+            <Link href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_RECEIPT}`}>
               <Button>
                 <FormattedMessage defaultMessage="Contact Me" />
               </Button>

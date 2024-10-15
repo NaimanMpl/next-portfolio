@@ -9,12 +9,10 @@ const getPaginatedData = async (url: string) => {
     const res = await fetch(url);
 
     const data: ContributionData[] = await res.json();
-    const contributions: Contribution[] = data
-      .filter((contribution) => contribution.type === 'PushEvent')
-      .map((contribution) => ({
-        created_at: contribution.created_at,
-        commits: contribution.payload?.commits ?? [],
-      }));
+    const contributions: Contribution[] = data.map((contribution) => ({
+      created_at: contribution.created_at,
+      commits: contribution.payload?.commits ?? [],
+    }));
 
     paginatedData = [...paginatedData, ...contributions];
     const headersLink = res.headers.get('link');
@@ -48,7 +46,10 @@ export async function GET() {
   const result = Object.entries(contributionsMapByDate)
     .map(([date, contribution]) => ({
       date,
-      commits: contribution.length,
+      commits: contribution.reduce((sum, data) => {
+        sum += data.commits.length;
+        return sum;
+      }, 0),
     }))
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 

@@ -57,7 +57,11 @@ const ContributionCard = () => {
         >
           <AreaChart
             accessibilityLayer
-            data={contributions}
+            data={contributions?.map((contribution) =>
+              contribution.commits < 10
+                ? { ...contribution, commits: contribution.commits + 10 }
+                : contribution,
+            )}
             margin={{
               left: 0,
               right: 0,
@@ -93,9 +97,11 @@ const ContributionCard = () => {
               content={<ChartTooltipContent hideLabel />}
               formatter={(value) => (
                 <div className="flex min-w-[120px] items-center text-xs text-muted-foreground">
-                  <FormattedMessage defaultMessage="Commits" />
+                  <FormattedMessage defaultMessage="Contributions" />
                   <div className="ml-auto flex items-baseline gap-0.5 font-mono font-medium tabular-nums text-foreground">
-                    {value}
+                    {parseInt(value.toString()) < 10
+                      ? parseInt(value.toString()) - 10
+                      : value}
                   </div>
                 </div>
               )}
