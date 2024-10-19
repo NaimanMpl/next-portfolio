@@ -8,7 +8,7 @@ export async function GET() {
   };
   try {
     let res = await fetch(
-      `https://europe.api.riotgames.com/riot/account/v1/accounts/by-riot-id/${process.env.RIOT_GAME_NAME}/${process.env.RIOT_TAG_LINE}/`,
+      `https://europe.api.riotgames.com/riot/account/v1/accounts/by-riot-id/${process.env.RIOT_GAME_NAME}/${process.env.RIOT_TAG_LINE}`,
       {
         headers,
       },
@@ -16,13 +16,13 @@ export async function GET() {
     const { puuid }: { puuid: string } = await res.json();
     const requests = [
       fetch(
-        `https://europe.api.riotgames.com/riot/account/v1/accounts/by-puuid/${puuid}/`,
+        `https://europe.api.riotgames.com/riot/account/v1/accounts/by-puuid/${puuid}`,
         {
           headers,
         },
       ),
       fetch(
-        `https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/${puuid}/`,
+        `https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/${puuid}`,
         {
           headers,
         },
@@ -47,7 +47,7 @@ export async function GET() {
     const [patchVersion] = data[2] as string[];
 
     res = await fetch(
-      `https://euw1.api.riotgames.com/lol/league/v4/entries/by-summoner/${summonerData.id}/`,
+      `https://euw1.api.riotgames.com/lol/league/v4/entries/by-summoner/${summonerData.id}`,
       {
         headers,
       },

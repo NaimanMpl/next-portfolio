@@ -7,6 +7,10 @@
     "defaultMessage": "Me contacter",
     "description": ""
   },
+  "5jeq8P": {
+    "defaultMessage": "Inconnu",
+    "description": ""
+  },
   "8wZXrT": {
     "defaultMessage": "Non classé",
     "description": ""
@@ -15,8 +19,16 @@
     "defaultMessage": "Voir le projet",
     "description": ""
   },
+  "AtML1q": {
+    "defaultMessage": "Maître",
+    "description": ""
+  },
   "doDJyI": {
     "defaultMessage": "Langages & Frameworks",
+    "description": ""
+  },
+  "FwkxsP": {
+    "defaultMessage": "Challenger",
     "description": ""
   },
   "g8Yp+m": {
@@ -31,8 +43,24 @@
     "defaultMessage": "Un projet de cœur qui recrée l'univers de mon enfance. En réalisant ce clone de Minecraft, j'ai voulu redonner vie à l'un de mes jeux préférés et revivre les souvenirs d'une époque plus simple.",
     "description": ""
   },
+  "GwqiOt": {
+    "defaultMessage": "Or",
+    "description": ""
+  },
+  "HVNKt/": {
+    "defaultMessage": "Grand Maître",
+    "description": ""
+  },
+  "j9vDBn": {
+    "defaultMessage": "Bronze",
+    "description": ""
+  },
   "KSiUKj": {
     "defaultMessage": "Voir le GitHub",
+    "description": ""
+  },
+  "mHiv5V": {
+    "defaultMessage": "Platine",
     "description": ""
   },
   "MTKFPh": {
@@ -45,6 +73,14 @@
   },
   "oVDe1D": {
     "defaultMessage": "Contributions",
+    "description": ""
+  },
+  "oWc8vJ": {
+    "defaultMessage": "Argent",
+    "description": ""
+  },
+  "rUaQTL": {
+    "defaultMessage": "Émeraude",
     "description": ""
   },
   "SeoZEM": {
@@ -61,6 +97,10 @@
   },
   "UpwcFd": {
     "defaultMessage": "Non disponible",
+    "description": ""
+  },
+  "WJ8H5S": {
+    "defaultMessage": "Diamant",
     "description": ""
   },
   "/wRlFV": {
@@ -80,7 +120,7 @@
     "description": ""
   },
   "texterify_timestamp": {
-    "defaultMessage": "2024-10-15T22:54:18Z",
+    "defaultMessage": "2024-10-19T09:00:53Z",
     "description": ""
   }
 }
