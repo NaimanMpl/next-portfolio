@@ -5,10 +5,45 @@ import { Progress } from '@/components/ui/progress';
 import { Skeleton } from '@/components/ui/skeleton';
 import { useGetSummonerQuery } from '@/redux/slice';
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 
 const LeagueCard = () => {
   const { data: summoner, isLoading, isError } = useGetSummonerQuery();
+  const intl = useIntl();
+
+  const tierDict = {
+    BRONZE: intl.formatMessage({
+      defaultMessage: 'Bronze',
+    }),
+    SILVER: intl.formatMessage({
+      defaultMessage: 'Silver',
+    }),
+    GOLD: intl.formatMessage({
+      defaultMessage: 'Gold',
+    }),
+    EMERALD: intl.formatMessage({
+      defaultMessage: 'Emerald',
+    }),
+    PLATINUM: intl.formatMessage({
+      defaultMessage: 'Platinum',
+    }),
+    DIAMOND: intl.formatMessage({
+      defaultMessage: 'Diamond',
+    }),
+    MASTER: intl.formatMessage({
+      defaultMessage: 'Master',
+    }),
+    GRANDMASTER: intl.formatMessage({
+      defaultMessage: 'Grand Master',
+    }),
+    CHALLENGER: intl.formatMessage({
+      defaultMessage: 'Challenger',
+    }),
+    UNKNOWN: intl.formatMessage({
+      defaultMessage: 'Unknown',
+    }),
+  };
+
   if (isError) {
     return (
       <Card className="col-start-2 col-end-4 mobile:col-start-auto mobile:col-end-auto">
@@ -71,7 +106,13 @@ const LeagueCard = () => {
               <>
                 <span>
                   {summoner.queues.solo ? (
-                    'Ranked'
+                    summoner.queues.solo.tier in tierDict ? (
+                      tierDict[
+                        summoner.queues.solo.tier as keyof typeof tierDict
+                      ]
+                    ) : (
+                      tierDict.UNKNOWN
+                    )
                   ) : (
                     <FormattedMessage defaultMessage="Unranked" />
                   )}
@@ -87,7 +128,7 @@ const LeagueCard = () => {
           {isLoading && <Skeleton className="h-2 w-full" />}
           {!isLoading && summoner && (
             <Progress
-              value={(summoner.queues.solo?.leaguePoints ?? 0) / 100}
+              value={summoner.queues.solo?.leaguePoints ?? 0}
               className="h-1"
             />
           )}

@@ -23,6 +23,12 @@
       "value": "Me contacter"
     }
   ],
+  "5jeq8P": [
+    {
+      "type": 0,
+      "value": "Inconnu"
+    }
+  ],
   "8YQBol": [
     {
       "type": 0,
@@ -35,10 +41,34 @@
       "value": "Non classé"
     }
   ],
+  "AtML1q": [
+    {
+      "type": 0,
+      "value": "Maître"
+    }
+  ],
+  "FwkxsP": [
+    {
+      "type": 0,
+      "value": "Challenger"
+    }
+  ],
   "GsBRWL": [
     {
       "type": 0,
       "value": "Langues"
+    }
+  ],
+  "GwqiOt": [
+    {
+      "type": 0,
+      "value": "Or"
+    }
+  ],
+  "HVNKt/": [
+    {
+      "type": 0,
+      "value": "Grand Maître"
     }
   ],
   "KSiUKj": [
@@ -71,6 +101,12 @@
       "value": "Non disponible"
     }
   ],
+  "WJ8H5S": [
+    {
+      "type": 0,
+      "value": "Diamant"
+    }
+  ],
   "Z3lYRx": [
     {
       "type": 0,
@@ -95,16 +131,40 @@
       "value": "Un projet de cœur qui recrée l'univers de mon enfance. En réalisant ce clone de Minecraft, j'ai voulu redonner vie à l'un de mes jeux préférés et revivre les souvenirs d'une époque plus simple."
     }
   ],
+  "j9vDBn": [
+    {
+      "type": 0,
+      "value": "Bronze"
+    }
+  ],
+  "mHiv5V": [
+    {
+      "type": 0,
+      "value": "Platine"
+    }
+  ],
   "oVDe1D": [
     {
       "type": 0,
       "value": "Contributions"
     }
   ],
+  "oWc8vJ": [
+    {
+      "type": 0,
+      "value": "Argent"
+    }
+  ],
+  "rUaQTL": [
+    {
+      "type": 0,
+      "value": "Émeraude"
+    }
+  ],
   "texterify_timestamp": [
     {
       "type": 0,
-      "value": "2024-10-15T22:54:18Z"
+      "value": "2024-10-19T09:00:53Z"
     }
   ],
   "tgvES0": [
