@@ -50,6 +50,7 @@ export async function GET() {
       `https://euw1.api.riotgames.com/lol/league/v4/entries/by-summoner/${summonerData.id}`,
       {
         headers,
+        cache: 'no-store',
       },
     );
 
