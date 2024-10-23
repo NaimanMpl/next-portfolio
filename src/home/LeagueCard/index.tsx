@@ -44,6 +44,13 @@ const LeagueCard = () => {
     }),
   };
 
+  const rankDict: Record<string, number> = {
+    I: 1,
+    II: 2,
+    III: 3,
+    IV: 4,
+  };
+
   if (isError) {
     return (
       <Card className="col-start-2 col-end-4 mobile:col-start-auto mobile:col-end-auto">
@@ -107,9 +114,7 @@ const LeagueCard = () => {
                 <span>
                   {summoner.queues.solo ? (
                     summoner.queues.solo.tier in tierDict ? (
-                      tierDict[
-                        summoner.queues.solo.tier as keyof typeof tierDict
-                      ]
+                      `${tierDict[summoner.queues.solo.tier as keyof typeof tierDict]} ${rankDict[summoner.queues.solo.rank as keyof typeof rankDict]}`
                     ) : (
                       tierDict.UNKNOWN
                     )
